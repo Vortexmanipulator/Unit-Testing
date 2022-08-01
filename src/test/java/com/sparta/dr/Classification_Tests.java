@@ -24,7 +24,7 @@ public class Classification_Tests {
     @Test
     @DisplayName("Given the user is over 18, return 'All films are available.'")
     void over18() {
-        int time = 18;
+        int time = 200; 
         String expected = "All films are available.";
         String answer = FilmClassifications.availableClassifications(time);
         Assertions.assertEquals(expected, answer);
