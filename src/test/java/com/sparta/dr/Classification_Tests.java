@@ -9,7 +9,7 @@ public class Classification_Tests {
     @DisplayName("Given the user is under the age of 12, return 'U,PG & 12 films are available.'")
     void under12() {
         int time = 9;
-        String expected = "U,PG & 12 films are available.";
+        String expected = "U & PG films are available.";
         String answer = FilmClassifications.availableClassifications(time);
         Assertions.assertEquals(expected, answer);
     }
@@ -24,7 +24,7 @@ public class Classification_Tests {
     @Test
     @DisplayName("Given the user is over 18, return 'All films are available.'")
     void over18() {
-        int time = 200; 
+        int time = 200;
         String expected = "All films are available.";
         String answer = FilmClassifications.availableClassifications(time);
         Assertions.assertEquals(expected, answer);
